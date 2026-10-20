@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <!-- Social Proof & Proven Stats Bar -->
+    <!-- Stats Bar -->
     <section class="py-12 bg-slate-900/80 border-y border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -103,7 +103,7 @@
         </div>
     </section>
 
-    <!-- Portfolio & Case Studies Section -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -112,7 +112,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Case Study 1 -->
                 <div class="rounded-2xl glass-card overflow-hidden hover:border-indigo-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-indigo-900/60 to-slate-900 flex items-center justify-center p-6 border-b border-slate-800">
                         <i class="fa-solid fa-laptop-code text-5xl text-indigo-400 group-hover:scale-110 transition-transform duration-300"></i>
@@ -128,7 +127,6 @@
                     </div>
                 </div>
 
-                <!-- Case Study 2 -->
                 <div class="rounded-2xl glass-card overflow-hidden hover:border-purple-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-purple-900/60 to-slate-900 flex items-center justify-center p-6 border-b border-slate-800">
                         <i class="fa-solid fa-cart-shopping text-5xl text-purple-400 group-hover:scale-110 transition-transform duration-300"></i>
@@ -144,7 +142,6 @@
                     </div>
                 </div>
 
-                <!-- Case Study 3 -->
                 <div class="rounded-2xl glass-card overflow-hidden hover:border-pink-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-pink-900/60 to-slate-900 flex items-center justify-center p-6 border-b border-slate-800">
                         <i class="fa-solid fa-robot text-5xl text-pink-400 group-hover:scale-110 transition-transform duration-300"></i>
@@ -304,4 +301,136 @@
                             </label>
 
                             <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
-                                <input type="
+                                <input type="checkbox" name="addons[]" value="CMS & Blog ($200)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <div>
+                                    <span class="text-sm font-medium text-slate-200">Blog / CMS Management</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Easy dashboard to edit content, publish blogs & news. (+$200)</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="checkbox" name="addons[]" value="Express 7-Day Turnaround ($300)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <div>
+                                    <span class="text-sm font-medium text-slate-200">Express Priority Rush</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Fast-track delivery within 7 business days. (+$300)</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer col-span-1 sm:col-span-2">
+                                <input type="checkbox" name="addons[]" value="Monthly Hosting & Support ($99/mo)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <div>
+                                    <span class="text-sm font-medium text-slate-200">Managed Hosting, SSL & Monthly Maintenance</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Hands-off hosting, speed optimizations, domain security, & regular edits. (+$99/month)</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Estimated Total Investment</p>
+                            <p class="text-3xl font-extrabold text-white mt-1" id="totalEstimate">$599 <span class="text-xs text-slate-400 font-normal">CAD</span></p>
+                        </div>
+                        <input type="hidden" name="estimated_price" id="hiddenPrice" value="$599 CAD">
+                    </div>
+
+                    <!-- Step 4: Contact Info & Submit -->
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <p class="text-sm font-semibold text-slate-300">4. Where should we send your official quote breakdown?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                            <input type="email" name="email" placeholder="Your Email Address" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base shadow-xl shadow-indigo-500/25 transition-all">
+                        Submit & Receive Official Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Website Audit Section -->
+    <section id="audit" class="py-20 bg-slate-900/50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-white">Get a Free Website Audit</h2>
+                <p class="text-slate-400 mt-2">We will analyze your current site for speed, mobile usability, and SEO leaks.</p>
+            </div>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="p-8 rounded-2xl glass-card space-y-4">
+                <input type="hidden" name="access_key" value="81257a81-d01d-471d-a4cc-3b1613ba49a4">
+                <input type="hidden" name="subject" value="Free Website Audit Request - Strata Pulse Designs">
+                <input type="hidden" name="redirect" value="https://stratapulsedesigns.ca">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" name="website_url" placeholder="Your Current Website URL" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                    <input type="email" name="contact_email" placeholder="Your Email Address" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition border border-slate-700">
+                    Request Free Analysis
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="py-12 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lg font-bold text-white mb-2">Strata Pulse Designs</p>
+            <p class="text-sm text-slate-400 mb-2">Direct Contact: Diego</p>
+            <p class="text-sm text-slate-400 mb-4 space-x-4">
+                <span>Email: <a href="mailto:stratapulsedesigns@gmail.com" class="text-indigo-400 underline">stratapulsedesigns@gmail.com</a></span>
+                <span>•</span>
+                <span>Phone: <a href="tel:6472951516" class="text-indigo-400 underline">647-295-1516</a></span>
+            </p>
+            <p class="text-xs text-slate-500">&copy; 2026 Strata Pulse Designs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Price Estimator Script -->
+    <script>
+        function calculateTotal() {
+            let total = 599;
+
+            // Base Package Price
+            const selectedType = document.querySelector('input[name="project_type"]:checked');
+            if (selectedType) {
+                if (selectedType.value.includes('599')) total = 599;
+                if (selectedType.value.includes('1,499')) total = 1499;
+                if (selectedType.value.includes('2,099')) total = 2099;
+                if (selectedType.value.includes('3,499')) total = 3499;
+            }
+
+            // Design Tier
+            const selectedDesign = document.querySelector('input[name="design_tier"]:checked');
+            if (selectedDesign && selectedDesign.value.includes('350')) {
+                total += 350;
+            }
+
+            // Checkbox Addons
+            let monthlyAddon = false;
+            const checkboxes = document.querySelectorAll('input[name="addons[]"]:checked');
+            checkboxes.forEach(cb => {
+                if (cb.value.includes('250')) total += 250;
+                if (cb.value.includes('150')) total += 150;
+                if (cb.value.includes('200')) total += 200;
+                if (cb.value.includes('300')) total += 300;
+                if (cb.value.includes('99')) monthlyAddon = true;
+            });
+
+            // Format Output String
+            let outputText = '$' + total.toLocaleString() + ' CAD';
+            if (monthlyAddon) {
+                outputText += ' + $99/mo';
+            }
+
+            document.getElementById('totalEstimate').innerText = outputText;
+            document.getElementById('hiddenPrice').value = outputText;
+        }
+    </script>
+</body>
+</html>
