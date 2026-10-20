@@ -6,45 +6,14 @@
     <title>Strata Pulse Designs | Modern Web Development & Digital Growth</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                        },
-                        accent: {
-                            500: '#10b981',
-                            600: '#059669',
-                        },
-                        dark: {
-                            900: '#090d16',
-                            800: '#0f172a',
-                            700: '#1e293b',
-                            600: '#334155'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-card {
-            background: rgba(15, 23, 42, 0.75);
+            background: rgba(15, 23, 42, 0.8);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -53,26 +22,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .gradient-border {
-            position: relative;
-            border-radius: 1rem;
-            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
-            padding: 1px;
-        }
-        .gradient-border-inner {
-            background: #0f172a;
-            border-radius: calc(1rem - 1px);
-        }
     </style>
 </head>
-<body class="bg-dark-900 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800/80">
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-purple-500 flex items-center justify-center shadow-lg shadow-brand-500/30">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
                         <i class="fa-solid fa-layer-group text-white text-lg"></i>
                     </div>
                     <span class="text-xl font-bold tracking-tight text-white">Strata Pulse <span class="gradient-text">Designs</span></span>
@@ -80,14 +39,14 @@
                 <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                     <a href="#services" class="hover:text-white transition-colors">Services</a>
                     <a href="#calculator" class="hover:text-white transition-colors">Project Estimator</a>
-                    <a href="#audit" class="hover:text-white transition-colors">Free Site Audit</a>
+                    <a href="#audit" class="hover:text-white transition-colors">Free Audit</a>
                     <a href="#contact" class="hover:text-white transition-colors">Contact</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="tel:6472951516" class="text-sm font-semibold text-slate-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-phone text-brand-500"></i> 647-295-1516
+                        <i class="fa-solid fa-phone text-indigo-500"></i> 647-295-1516
                     </a>
-                    <a href="#calculator" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-purple-600 hover:from-brand-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-brand-500/25 transition-all transform hover:-translate-y-0.5">Get Instant Quote</a>
+                    <a href="#calculator" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 transition-all">Get Instant Quote</a>
                 </div>
             </div>
         </div>
@@ -95,16 +54,200 @@
 
     <!-- Hero Section -->
     <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/30 via-dark-900 to-dark-900 -z-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider mb-8">
-                <i class="fa-solid fa-bolt text-brand-400"></i> High-Converting Websites & Web Applications
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-8">
+                <i class="fa-solid fa-bolt text-indigo-400"></i> High-Converting Websites & Web Applications
             </span>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none max-w-5xl mx-auto">
                 We Build Digital Products That <span class="gradient-text">Turn Visitors Into Revenue</span>
             </h1>
-            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-normal">
-                Strata Pulse Designs crafts high-speed, custom-tailored websites and digital marketing engines built for Canadian small businesses & startups.
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
+                Strata Pulse Designs crafts high-speed, custom-tailored websites and digital growth engines built for businesses.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-purple-600 hover:from-brand-
+                <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base shadow-xl shadow-indigo-500/25 transition-all flex items-center justify-center gap-2">
+                    Estimate Your Project <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#audit" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-base transition-all flex items-center justify-center gap-2">
+                    Request Free Audit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What We Do</h2>
+                <p class="text-slate-400 mt-3">Tailored web solutions designed to scale your business.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Web Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fast, mobile-ready websites built from scratch to turn casual traffic into paying clients.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">SEO & Performance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Optimize Google rankings and speed up load times so customers find you before your competition.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">E-Commerce & Portals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Seamless online checkout systems, client request forms, and automated lead capture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator Section -->
+    <section id="calculator" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Instant Project Cost Estimator</h2>
+                <p class="text-slate-400 mt-3">Select your specifications below to receive an instant estimate.</p>
+            </div>
+
+            <div class="p-8 rounded-2xl glass-card">
+                <form action="https://api.web3forms.com/submit" method="POST" id="calculatorForm" class="space-y-8">
+                    <input type="hidden" name="access_key" value="81257a81-d01d-471d-a4cc-3b1613ba49a4">
+                    <input type="hidden" name="subject" value="New Web Project Quote Request - Strata Pulse Designs">
+                    <input type="hidden" name="redirect" value="https://stratapulsedesigns.ca">
+
+                    <!-- Step 1: Project Type -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-3">1. Select Project Type</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="project_type" value="Landing Page ($499)" class="peer sr-only" checked onchange="calculateTotal()">
+                                <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
+                                    <p class="font-bold text-white">Landing Page</p>
+                                    <p class="text-xs text-slate-400 mt-1">Single high-converting page.</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$499</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="project_type" value="Multi-Page Site ($999)" class="peer sr-only" onchange="calculateTotal()">
+                                <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
+                                    <p class="font-bold text-white">Multi-Page Site</p>
+                                    <p class="text-xs text-slate-400 mt-1">Full 5-10 page custom site.</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$999</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="project_type" value="E-Commerce ($1,899)" class="peer sr-only" onchange="calculateTotal()">
+                                <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
+                                    <p class="font-bold text-white">E-Commerce</p>
+                                    <p class="text-xs text-slate-400 mt-1">Online store with payments.</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$1,899</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Addons -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-3">2. Optional Add-ons</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="checkbox" name="addons[]" value="SEO ($250)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <span class="text-sm text-slate-200">Local SEO Package (+$250)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="checkbox" name="addons[]" value="Logo Design ($150)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <span class="text-sm text-slate-200">Branding & Logo (+$150)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Estimated Investment</p>
+                            <p class="text-3xl font-extrabold text-white mt-1" id="totalEstimate">$499 <span class="text-xs text-slate-400 font-normal">CAD</span></p>
+                        </div>
+                        <input type="hidden" name="estimated_price" id="hiddenPrice" value="$499 CAD">
+                    </div>
+
+                    <!-- Step 3: Contact Info -->
+                    <div class="space-y-4 pt-4 border-t border-slate-800">
+                        <p class="text-sm font-semibold text-slate-300">3. Where should we send your official quote?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                            <input type="email" name="email" placeholder="Your Email Address" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base shadow-xl shadow-indigo-500/25 transition-all">
+                        Submit & Receive Official Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Website Audit Section -->
+    <section id="audit" class="py-20 bg-slate-900/50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-white">Get a Free Website Audit</h2>
+                <p class="text-slate-400 mt-2">We will analyze your current site for speed, mobile usability, and SEO leaks.</p>
+            </div>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="p-8 rounded-2xl glass-card space-y-4">
+                <input type="hidden" name="access_key" value="81257a81-d01d-471d-a4cc-3b1613ba49a4">
+                <input type="hidden" name="subject" value="Free Website Audit Request - Strata Pulse Designs">
+                <input type="hidden" name="redirect" value="https://stratapulsedesigns.ca">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" name="website_url" placeholder="Your Current Website URL" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                    <input type="email" name="contact_email" placeholder="Your Email Address" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition border border-slate-700">
+                    Request Free Analysis
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="py-12 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lg font-bold text-white mb-2">Strata Pulse Designs</p>
+            <p class="text-sm text-slate-400 mb-4">Direct Contact: Diego | Phone: <a href="tel:6472951516" class="text-indigo-400 underline">647-295-1516</a></p>
+            <p class="text-xs text-slate-500">&copy; 2026 Strata Pulse Designs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Price Estimator Script -->
+    <script>
+        function calculateTotal() {
+            let total = 499;
+            const selectedType = document.querySelector('input[name="project_type"]:checked');
+            if (selectedType) {
+                if (selectedType.value.includes('499')) total = 499;
+                if (selectedType.value.includes('999')) total = 999;
+                if (selectedType.value.includes('1,899')) total = 1899;
+            }
+
+            const checkboxes = document.querySelectorAll('input[name="addons[]"]:checked');
+            checkboxes.forEach(cb => {
+                if (cb.value.includes('250')) total += 250;
+                if (cb.value.includes('150')) total += 150;
+            });
+
+            document.getElementById('totalEstimate').innerText = '$' + total.toLocaleString() + ' CAD';
+            document.getElementById('hiddenPrice').value = '$' + total.toLocaleString() + ' CAD';
+        }
+    </script>
+</body>
+</html>
