@@ -43,8 +43,11 @@
                     <a href="#audit" class="hover:text-white transition-colors">Free Audit</a>
                     <a href="#contact" class="hover:text-white transition-colors">Contact</a>
                 </div>
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="tel:6472951516" class="text-sm font-semibold text-slate-300 hover:text-white flex items-center gap-2">
+                <div class="hidden lg:flex items-center space-x-6 text-xs sm:text-sm font-semibold">
+                    <a href="mailto:stratapulsedesigns@gmail.com" class="text-slate-300 hover:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-indigo-500"></i> stratapulsedesigns@gmail.com
+                    </a>
+                    <a href="tel:6472951516" class="text-slate-300 hover:text-white flex items-center gap-2">
                         <i class="fa-solid fa-phone text-indigo-500"></i> 647-295-1516
                     </a>
                     <a href="#calculator" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 transition-all">Get Instant Quote</a>
@@ -63,7 +66,7 @@
                 We Build Digital Products That <span class="gradient-text">Turn Visitors Into Revenue</span>
             </h1>
             <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
-                Strata Pulse Designs crafts high-speed, custom-tailored websites and digital growth engines built for Canadian small businesses & growing startups.
+                Strata Pulse Designs crafts high-speed, custom-tailored websites and digital growth engines built for small businesses & growing startups.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base shadow-xl shadow-indigo-500/25 transition-all flex items-center justify-center gap-2">
@@ -193,7 +196,7 @@
         </div>
     </section>
 
-    <!-- Expanded Quote Calculator Section -->
+    <!-- Interactive Quote Estimator Section -->
     <section id="calculator" class="py-20 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -270,4 +273,35 @@
                                 </div>
                             </label>
                             <label class="cursor-pointer">
-                                <input type="radio" name="design_tier" value="
+                                <input type="radio" name="design_tier" value="Premium Motion & Custom Graphics ($350)" class="peer sr-only" onchange="calculateTotal()">
+                                <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
+                                    <p class="font-bold text-white">Premium Motion & Visuals</p>
+                                    <p class="text-xs text-slate-400 mt-1">Custom interactive animations, glassmorphism, & micro-interactions.</p>
+                                    <p class="text-xs font-semibold text-indigo-400 mt-2">+$350 CAD</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Add-Ons & Integrations -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-3">3. Optional Add-On Integrations</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="checkbox" name="addons[]" value="Local SEO Package ($250)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <div>
+                                    <span class="text-sm font-medium text-slate-200">Local SEO & Google Setup</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Google Maps, keyword tagging & search indexing. (+$250)</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="checkbox" name="addons[]" value="AI Assistant ($150)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <div>
+                                    <span class="text-sm font-medium text-slate-200">AI Assistant Integration</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">24/7 automated chatbot for FAQs & lead qualification. (+$150)</p>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                                <input type="
