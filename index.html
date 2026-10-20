@@ -92,17 +92,17 @@
                 </div>
                 <div class="p-8 rounded-2xl glass-card">
                     <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-chart-line"></i>
+                        <i class="fa-solid fa-robot"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">SEO & Performance</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Optimize Google rankings and speed up load times so customers find you before your competition.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">AI & Automation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Intelligent virtual assistants and automated lead capture tools to answer customer questions 24/7.</p>
                 </div>
                 <div class="p-8 rounded-2xl glass-card">
                     <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl mb-6">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">E-Commerce & Portals</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Seamless online checkout systems, client request forms, and automated lead capture.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Seamless online checkout systems, client request forms, and automated lead management.</p>
                 </div>
             </div>
         </div>
@@ -127,27 +127,27 @@
                         <label class="block text-sm font-semibold text-slate-300 mb-3">1. Select Project Type</label>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <label class="cursor-pointer">
-                                <input type="radio" name="project_type" value="Landing Page ($499)" class="peer sr-only" checked onchange="calculateTotal()">
+                                <input type="radio" name="project_type" value="Landing Page ($599)" class="peer sr-only" checked onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
                                     <p class="font-bold text-white">Landing Page</p>
                                     <p class="text-xs text-slate-400 mt-1">Single high-converting page.</p>
-                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$499</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$599</p>
                                 </div>
                             </label>
                             <label class="cursor-pointer">
-                                <input type="radio" name="project_type" value="Multi-Page Site ($999)" class="peer sr-only" onchange="calculateTotal()">
+                                <input type="radio" name="project_type" value="Multi-Page Site ($1,499)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
                                     <p class="font-bold text-white">Multi-Page Site</p>
                                     <p class="text-xs text-slate-400 mt-1">Full 5-10 page custom site.</p>
-                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$999</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$1,499</p>
                                 </div>
                             </label>
                             <label class="cursor-pointer">
-                                <input type="radio" name="project_type" value="E-Commerce ($1,899)" class="peer sr-only" onchange="calculateTotal()">
+                                <input type="radio" name="project_type" value="E-Commerce ($2,099)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
                                     <p class="font-bold text-white">E-Commerce</p>
                                     <p class="text-xs text-slate-400 mt-1">Online store with payments.</p>
-                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$1,899</p>
+                                    <p class="text-sm font-semibold text-indigo-400 mt-3">$2,099</p>
                                 </div>
                             </label>
                         </div>
@@ -158,12 +158,12 @@
                         <label class="block text-sm font-semibold text-slate-300 mb-3">2. Optional Add-ons</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
-                                <input type="checkbox" name="addons[]" value="SEO ($250)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <input type="checkbox" name="addons[]" value="SEO Package ($250)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <span class="text-sm text-slate-200">Local SEO Package (+$250)</span>
                             </label>
                             <label class="flex items-center space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
-                                <input type="checkbox" name="addons[]" value="Logo Design ($150)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
-                                <span class="text-sm text-slate-200">Branding & Logo (+$150)</span>
+                                <input type="checkbox" name="addons[]" value="AI Assistant ($150)" class="rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
+                                <span class="text-sm text-slate-200">AI Assistant Integration (+$150)</span>
                             </label>
                         </div>
                     </div>
@@ -172,9 +172,9 @@
                     <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
                         <div>
                             <p class="text-xs text-slate-400 font-medium">Estimated Investment</p>
-                            <p class="text-3xl font-extrabold text-white mt-1" id="totalEstimate">$499 <span class="text-xs text-slate-400 font-normal">CAD</span></p>
+                            <p class="text-3xl font-extrabold text-white mt-1" id="totalEstimate">$599 <span class="text-xs text-slate-400 font-normal">CAD</span></p>
                         </div>
-                        <input type="hidden" name="estimated_price" id="hiddenPrice" value="$499 CAD">
+                        <input type="hidden" name="estimated_price" id="hiddenPrice" value="$599 CAD">
                     </div>
 
                     <!-- Step 3: Contact Info -->
@@ -212,42 +212,4 @@
                     <input type="text" name="website_url" placeholder="Your Current Website URL" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
                     <input type="email" name="contact_email" placeholder="Your Email Address" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:border-indigo-500 outline-none">
                 </div>
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition border border-slate-700">
-                    Request Free Analysis
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Contact & Footer -->
-    <footer id="contact" class="py-12 bg-slate-950 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-lg font-bold text-white mb-2">Strata Pulse Designs</p>
-            <p class="text-sm text-slate-400 mb-4">Direct Contact: Diego | Phone: <a href="tel:6472951516" class="text-indigo-400 underline">647-295-1516</a></p>
-            <p class="text-xs text-slate-500">&copy; 2026 Strata Pulse Designs. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Interactive Price Estimator Script -->
-    <script>
-        function calculateTotal() {
-            let total = 499;
-            const selectedType = document.querySelector('input[name="project_type"]:checked');
-            if (selectedType) {
-                if (selectedType.value.includes('499')) total = 499;
-                if (selectedType.value.includes('999')) total = 999;
-                if (selectedType.value.includes('1,899')) total = 1899;
-            }
-
-            const checkboxes = document.querySelectorAll('input[name="addons[]"]:checked');
-            checkboxes.forEach(cb => {
-                if (cb.value.includes('250')) total += 250;
-                if (cb.value.includes('150')) total += 150;
-            });
-
-            document.getElementById('totalEstimate').innerText = '$' + total.toLocaleString() + ' CAD';
-            document.getElementById('hiddenPrice').value = '$' + total.toLocaleString() + ' CAD';
-        }
-    </script>
-</body>
-</html>
+                <button type="submit" class="w-full
