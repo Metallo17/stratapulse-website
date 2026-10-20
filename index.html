@@ -13,7 +13,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-card {
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -211,7 +211,7 @@
                     <div>
                         <label class="block text-sm font-semibold text-slate-300 mb-3">1. Select Core Web Package</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="project_type" value="Landing Page ($599)" class="peer sr-only" checked onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all h-full flex flex-col justify-between">
                                     <div>
@@ -222,7 +222,7 @@
                                 </div>
                             </label>
 
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="project_type" value="Multi-Page Website ($1,499)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all h-full flex flex-col justify-between">
                                     <div>
@@ -233,7 +233,7 @@
                                 </div>
                             </label>
 
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="project_type" value="E-Commerce Store ($2,099)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all h-full flex flex-col justify-between">
                                     <div>
@@ -244,7 +244,7 @@
                                 </div>
                             </label>
 
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="project_type" value="Custom Web App / Portal ($3,499)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all h-full flex flex-col justify-between">
                                     <div>
@@ -257,11 +257,11 @@
                         </div>
                     </div>
 
-                    <!-- Step 2: Design & Polish Level -->
+                    <!-- Step 2: Design Tier -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-300 mb-3">2. Choose Design & Animation Tier</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="design_tier" value="Standard Clean Design ($0)" class="peer sr-only" checked onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
                                     <p class="font-bold text-white">Standard Clean Design</p>
@@ -269,7 +269,7 @@
                                     <p class="text-xs font-medium text-emerald-400 mt-2">Included</p>
                                 </div>
                             </label>
-                            <label class="cursor-pointer">
+                            <label class="cursor-pointer block">
                                 <input type="radio" name="design_tier" value="Premium Motion & Custom Graphics ($350)" class="peer sr-only" onchange="calculateTotal()">
                                 <div class="p-4 rounded-xl border border-slate-700 peer-checked:border-indigo-500 peer-checked:bg-indigo-500/10 transition-all">
                                     <p class="font-bold text-white">Premium Motion & Visuals</p>
@@ -280,47 +280,47 @@
                         </div>
                     </div>
 
-                    <!-- Step 3: Add-Ons & Integrations -->
+                    <!-- Step 3: Add-Ons -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-300 mb-3">3. Optional Add-On Integrations</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                        <div class="space-y-3">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer hover:border-slate-500 transition">
                                 <input type="checkbox" name="addons[]" value="Local SEO Package ($250)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <div>
-                                    <span class="text-sm font-medium text-slate-200">Local SEO & Google Setup</span>
-                                    <p class="text-xs text-slate-400 mt-0.5">Google Maps, keyword tagging & search indexing. (+$250)</p>
+                                    <span class="text-sm font-medium text-slate-200">Local SEO & Google Setup (+$250)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Google Maps, keyword tagging & search indexing.</p>
                                 </div>
                             </label>
 
-                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer hover:border-slate-500 transition">
                                 <input type="checkbox" name="addons[]" value="AI Assistant ($150)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <div>
-                                    <span class="text-sm font-medium text-slate-200">AI Assistant Integration</span>
-                                    <p class="text-xs text-slate-400 mt-0.5">24/7 automated chatbot for FAQs & lead qualification. (+$150)</p>
+                                    <span class="text-sm font-medium text-slate-200">AI Assistant Integration (+$150)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">24/7 automated chatbot for FAQs & lead qualification.</p>
                                 </div>
                             </label>
 
-                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer hover:border-slate-500 transition">
                                 <input type="checkbox" name="addons[]" value="CMS & Blog ($200)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <div>
-                                    <span class="text-sm font-medium text-slate-200">Blog / CMS Management</span>
-                                    <p class="text-xs text-slate-400 mt-0.5">Easy dashboard to edit content, publish blogs & news. (+$200)</p>
+                                    <span class="text-sm font-medium text-slate-200">Blog / CMS Management (+$200)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Easy dashboard to edit content, publish blogs & news.</p>
                                 </div>
                             </label>
 
-                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer hover:border-slate-500 transition">
                                 <input type="checkbox" name="addons[]" value="Express 7-Day Turnaround ($300)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <div>
-                                    <span class="text-sm font-medium text-slate-200">Express Priority Rush</span>
-                                    <p class="text-xs text-slate-400 mt-0.5">Fast-track delivery within 7 business days. (+$300)</p>
+                                    <span class="text-sm font-medium text-slate-200">Express Priority Rush (+$300)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Fast-track delivery within 7 business days.</p>
                                 </div>
                             </label>
 
-                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer col-span-1 sm:col-span-2">
+                            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-700 cursor-pointer hover:border-slate-500 transition">
                                 <input type="checkbox" name="addons[]" value="Monthly Hosting & Support ($99/mo)" class="mt-1 rounded border-slate-700 text-indigo-600 focus:ring-indigo-500" onchange="calculateTotal()">
                                 <div>
-                                    <span class="text-sm font-medium text-slate-200">Managed Hosting, SSL & Monthly Maintenance</span>
-                                    <p class="text-xs text-slate-400 mt-0.5">Hands-off hosting, speed optimizations, domain security, & regular edits. (+$99/month)</p>
+                                    <span class="text-sm font-medium text-slate-200">Managed Hosting, SSL & Monthly Maintenance (+$99/mo)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">Hands-off hosting, speed optimizations, domain security, & regular edits.</p>
                                 </div>
                             </label>
                         </div>
